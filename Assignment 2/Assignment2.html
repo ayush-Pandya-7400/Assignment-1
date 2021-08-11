@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>
+        Assignment 2
+    </title>
+    <style>
+        
+
+
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+
+body {
+	
+	font-family:'Source Sans Pro', sans-serif;
+	height: 100%;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+}
+
+.container {
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+}
+
+.table {
+	width:100%;
+	border:1px solid #EEEEEE;
+}
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:#000;
+	padding: 0;
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+	padding: 0;
+	background:#EEEEEE;
+
+
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+}
+
+.header__item {
+	text-transform:uppercase;
+}
+
+.filter__link {
+	color:white;
+	text-decoration: none;
+	position:relative;
+	display:inline-block;
+	
+	
+	
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+	
+        <div class="table">
+            <div class="table-header">
+                <div class="header__item"><a id="name" class="filter__link" href="#">Name</a></div>
+                <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Subject</a></div>
+                <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">City</a></div>
+                <div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Marks</a></div>
+            </div>
+            <div class="table-content">	
+                <div class="table-row">		
+                    <div class="table-data">Ayush Pandya</div>
+                    <div class="table-data">HTML/CSS</div>
+                    <div class="table-data">Vadodara</div>
+                    <div class="table-data">99</div>
+                    
+                </div>
+                <div class="table-row">
+                    <div class="table-data">Saurav Gupta</div>
+                    <div class="table-data">Flutter</div>
+                    <div class="table-data">Mumbai</div>
+                    <div class="table-data">100</div>
+                    
+                </div>
+                <div class="table-row">
+                    <div class="table-data">Uttam Kumar</div>
+                    <div class="table-data">Java-Script</div>
+                    <div class="table-data">Vadodara</div>
+                    <div class="table-data">96</div>
+                    
+                </div>
+            </div>	
+        </div>
+    </div>
+    
+
+
+</body>
+</html>
